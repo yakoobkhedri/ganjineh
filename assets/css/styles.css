@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "parastoo-Regular";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-FD-WOL.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "parastoo-Bold";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-Bold-FD-WOL.ttf') format("truetype");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    background-color: #031602;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.main-bg {
+    background-color: #011201;
+}
+
+.main-text {
+    color: #011201;
+}
+
+.second-bg {
+    background-color: #E7A024;
+}
+
+.second-text {
+    color: #E7A024;
+}
+
+.text-gold-gradient {
+    background: linear-gradient(180deg, #E7A024 28.91%, #7B4F03 128.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.third-bg {
+    background-color: #677367;
+}
+
+.third-text {
+    color: #677367;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-gray {
+    background-color: #eeeff0;
+}
+
+.bg-gray2 {
+    background-color: #eff0f1;
+}
+.border-y-main{
+    border-top: 1px solid #414F40;
+    border-bottom: 1px solid #414F40;
+}
+.cursor {
+    cursor: pointer;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+a:hover {
+    color: #E7A024;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 10px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.transition {
+    transition: all .4s;
+}
+
+.w-88 {
+    width: 88px;
+}
+
+.h-88 {
+    height: 88px;
+}
+
+.w-74 {
+    width: 74px;
+}
+
+.h-74 {
+    height: 74px;
+}
+
+.socials a:hover {
+    color: #ffca36 !important;
+}
+
+.special-hover {
+    overflow: hidden;
+}
+
+.special-hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 27px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.24);
+    transform: scale(2) rotate(45deg) translate3d(0, -100%, 0);
+    transition: transform .6s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.special-hover:hover::before {
+    transform: scale(2) rotate(45deg) translate3d(0, 100%, 0);
+    left: -51px;
+}
+
+.rounded-22 {
+    border-radius: 22px;
+}
+
+.bottom-12 {
+    bottom: -12px;
+}
+
+.pt-152 {
+    padding-top: 152px !important;
+}
+
+/* header */
+
+header {
+    height: 74px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #E7A024;
+    border-bottom: 2px solid #E7A024;
+    padding-bottom: 5px;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -49px;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    background-color: #011201;
+    z-index: -1;
+}
+
+img[alt='logo'] {
+    width: 70px;
+    position: relative;
+    bottom: -8px;
+}
+
+/* banner */
+.slide-bg {
+    background-color: #4E614E99;
+    width: 368px;
+    height: 581px;
+    border-radius: 184px 184px 0 0;
+
+}
+
+.ganj::before {
+    content: url('../img/Ellipse\ 6.svg');
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -44px;
+    z-index: -1;
+}
+
+#banner .swiper-button-prev,
+#banner .swiper-button-next {
+    top: 50%;
+    width: 37px;
+    height: 64px;
+    border-radius: 18.5px;
+    border: 1px solid #3D483C;
+    background-color: #031803;
+
+}
+
+#banner .swiper-button-prev {
+    left: -75px;
+}
+
+#banner .swiper-button-next {
+    right: -75px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #E7A024;
+    font-size: 16px;
+}
+
+/* responsive */
+@media only screen and (max-width:1400px) {}
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:400px) {}
