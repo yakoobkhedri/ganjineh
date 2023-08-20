@@ -68,7 +68,9 @@ body {
 .border-bottom-main {
     border-bottom: 1px solid #132512;
 }
-
+.border-third{
+    border: 1px solid #616461;
+}
 .cursor {
     cursor: pointer;
 }
