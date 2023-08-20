@@ -186,6 +186,21 @@ a:hover {
 
 header {
     height: 74px;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 71%;
+    left: 0px;
+    right: 0;
+    height: 27px;
+    bottom: 4px;
+    box-shadow: 0 56px 172px #E7A024;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header ul li a:hover,
