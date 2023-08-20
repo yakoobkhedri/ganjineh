@@ -63,6 +63,9 @@ body {
     border-top: 1px solid #414F40;
     border-bottom: 1px solid #414F40;
 }
+.border-bottom-main{
+    border-bottom: 1px solid #132512;
+}
 .cursor {
     cursor: pointer;
 }
@@ -152,6 +155,10 @@ a:hover {
     padding-top: 152px !important;
 }
 
+.outline-none{
+    outline: none;
+}
+
 /* header */
 
 header {
@@ -226,6 +233,10 @@ img[alt='logo'] {
 .swiper-button-next::after {
     color: #E7A024;
     font-size: 16px;
+}
+/* searchbox */
+.searchbox{
+    width: 715px;
 }
 
 /* responsive */
