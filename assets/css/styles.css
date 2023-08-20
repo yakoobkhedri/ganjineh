@@ -68,9 +68,11 @@ body {
 .border-bottom-main {
     border-bottom: 1px solid #132512;
 }
-.border-third{
+
+.border-third {
     border: 1px solid #616461;
 }
+
 .cursor {
     cursor: pointer;
 }
@@ -103,6 +105,14 @@ a:hover {
 
 .transition {
     transition: all .4s;
+}
+
+.w-8 {
+    width: 8px;
+}
+
+.h-8 {
+    height: 8px;
 }
 
 .w-88 {
@@ -155,9 +165,15 @@ a:hover {
 .bottom-12 {
     bottom: -12px;
 }
-.top-44{
+
+.top-44 {
     top: -44px;
 }
+
+.right-100 {
+    right: -100px;
+}
+
 .pt-152 {
     padding-top: 152px !important;
 }
@@ -252,6 +268,14 @@ img[alt='logo'] {
     width: 294px;
     height: 302px;
     border-radius: 70px 70px 0 0;
+}
+
+/* footer */
+footer {
+    background-image: url('../img/Union.png');
+    height: 132px;
+    background-position: center;
+    filter: contrast(114%);
 }
 
 /* responsive */
