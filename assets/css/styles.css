@@ -175,8 +175,8 @@ a:hover {
 .bottom-12 {
     bottom: -12px;
 }
-.top-30{
-    top: -30px;
+.top-52{
+    top: -52px;
 }
 .top-44 {
     top: -44px;
@@ -197,7 +197,6 @@ a:hover {
 /* header */
 
 header {
-    height: 74px;
     position: relative;
 }
 
@@ -345,6 +344,9 @@ footer {
       .state {
         background-size: 526px;
       }
+      footer p{
+        font-size: 12px;
+      }
 }
 
 @media only screen and (max-width:576px) {
@@ -363,6 +365,7 @@ footer {
       .right-100 {
         right: -38px;
       }
+    
 }
 
 @media only screen and (max-width:400px) {

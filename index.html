@@ -16,23 +16,27 @@
 
     <!-- header -->
 
-    <header class="main-bg position-relative pb-3">
+    <header class="main-bg position-relative">
         <div class="container h-100">
-            <nav class="row align-items-end h-100">
+            <nav class="row align-items-lg-end align-items-center h-100">
                 <div class="col-5 h-100">
-                    <ul class="list-unstyled d-flex justify-content-between p-0 m-0">
+                    <!-- hamicon -->
+                    <img alt="icon" src="assets/img/icons8-menu-16 (1) 1.svg" class="img-fluid cursor d-block d-lg-none">
+                    <ul class="list-unstyled justify-content-between p-0 m-0 d-none d-lg-flex">
                         <li><a class="d-block third-text">سوژه ها</a></li>
                         <li><a class="d-block third-text">کتاب ها</a></li>
                         <li><a class="d-block third-text">نویسندگان</a></li>
                         <li><a class="d-block third-text">استان ها</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 flex-shrink-0">
                     <a class="d-block"><img alt="logo" src="assets/img/logo header.png"
-                            class="img-fluid d-block mx-auto"></a>
+                            class="img-fluid d-block mx-auto flex-shrink-0"></a>
                 </div>
                 <div class="col-5 h-100">
-                    <ul class="list-unstyled d-flex justify-content-between p-0 m-0">
+                    <!-- searchicon -->
+                    <img alt="icon" src="assets/img/icons8-search 2.svg" class="img-fluid cursor me-auto d-block d-lg-none">
+                    <ul class="list-unstyled d-lg-flex d-none justify-content-between p-0 m-0">
                         <li><a class="d-block third-text active">صفحه اصلی</a></li>
                         <li><a class="d-block third-text">ارسال سوژه</a></li>
                         <li><a class="d-block third-text">درباره ما</a></li>
@@ -387,18 +391,18 @@
 
     <footer class="d-flex align-items-center">
         <div class="container mt-5">
-            <div class="row align-items-center justify-content-between">
-                <p class="mb-0 col-4 third-text">تمامی حقوق این سایت برای حوزه هنری محفوظ است</p>
+            <div class="row align-items-center justify-content-between position-relative">
+                <p class="mb-0 col-6 third-text">تمامی حقوق این سایت برای حوزه هنری محفوظ است</p>
                 <a
-                    class="d-flex col-4 w-44 h-44 mb-5 position-relative top-30 align-items-center third-text third-border rounded-circle p-2 justify-content-center">
+                    class="d-flex col-4 w-44 h-44 mb-5 position-absolute mx-auto end-0 start-0 top-52 align-items-center third-text third-border rounded-circle p-2 justify-content-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-up" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                     </svg>
                 </a>
-                <div class="d-flex col-4 align-items-center justify-content-end gap-3">
-                    <p class="mb-0 third-text">شبکه های اجتماعی</p>
+                <div class="d-flex col-6 align-items-center justify-content-end gap-3">
+                    <p class="mb-0 third-text d-none d-lg-block">شبکه های اجتماعی</p>
                     <a class="d-block">
                         <img alt="social" src="assets/img/icons8-whatsapp-50 1.svg">
                     </a>
