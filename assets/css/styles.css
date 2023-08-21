@@ -328,6 +328,10 @@ footer {
     .ganj::before {
         right: -631px;
     }
+    .state {
+        background-position: center 1037px;
+        background-size: 803px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -338,6 +342,9 @@ footer {
         width: 84px;
         height: 84px;
       }
+      .state {
+        background-size: 526px;
+      }
 }
 
 @media only screen and (max-width:576px) {
@@ -346,6 +353,15 @@ footer {
     }
     .ganj::before {
         right: -368px;
+      }
+      .searchbox {
+        width: 100%;
+      }
+      .state {
+        background-size: 291px;
+      }
+      .right-100 {
+        right: -38px;
       }
 }
 
