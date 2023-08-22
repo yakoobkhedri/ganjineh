@@ -24,6 +24,9 @@ var menuSwiper = new Swiper(".banner", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 var menuSwiper = new Swiper(".brands", {
   loop: true,
