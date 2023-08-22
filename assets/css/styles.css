@@ -285,7 +285,7 @@ img[alt='logo'] {
 }
 
 .ganjine {
-    background-color: #4E614E;
+    background-color: #2f432f;
     width: 368px;
     height: 581px;
     border-radius: 184px 184px 0 0;
@@ -320,9 +320,16 @@ footer {
 }
 
 /* responsive */
-@media only screen and (max-width:1400px) {}
+@media only screen and (max-width:1400px) {
+    .slide-bg {
+      width: auto;
+    }
+}
 
 @media only screen and (max-width:1200px) {
+    .slide-bg {
+        width: 368px;
+    }
     .slide-bg.statistics {
         height: 119px;
         border-radius: 290px 0 0px 290px;
