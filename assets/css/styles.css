@@ -208,7 +208,9 @@ a:hover {
     position: relative;
     top: -48px;
 }
-
+.custom-blur{
+    backdrop-filter: blur(9px);
+}
 /* header */
 
 header {
