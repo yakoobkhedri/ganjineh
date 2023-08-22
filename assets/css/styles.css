@@ -212,7 +212,9 @@ a:hover {
 .custom-blur {
     backdrop-filter: blur(9px);
 }
-
+.pb-90{
+    padding-bottom: 90px;
+}
 /* header */
 
 header {
@@ -232,12 +234,14 @@ header::before {
     margin-left: auto;
     margin-right: auto;
 }
-
+header ul li a{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
 header ul li a:hover,
 header ul li a.active {
     color: #E7A024;
     border-bottom: 2px solid #E7A024;
-    padding-bottom: 5px;
 }
 
 img[alt='logo'] {
@@ -279,11 +283,11 @@ img[alt='logo'] {
 }
 
 #banner .swiper-button-prev {
-    left: -75px;
+    left: 0;
 }
 
 #banner .swiper-button-next {
-    right: -75px;
+    right: 0;
 }
 
 .swiper-button-prev::after,
@@ -346,18 +350,18 @@ footer {
 
     #banner .swiper-button-next {
         right: 0;
-        top: 97.7%;
+        top: 92.7%;
     }
 
     #banner .swiper-button-prev {
         left: 0;
-        top: 97.7%;
+        top: 92.7%;
     }
 
     #banner .swiper-pagination {
         left: 0;
         right: 0;
-        bottom: 0px;
+        bottom: 31px;
         display: block;
     }
 
