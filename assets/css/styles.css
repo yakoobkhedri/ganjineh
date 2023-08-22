@@ -47,9 +47,11 @@ body {
 .third-text {
     color: #677367;
 }
+
 .third-border {
-    border:1px solid #677367;
+    border: 1px solid #677367;
 }
+
 .text-black {
     color: black;
 }
@@ -175,9 +177,11 @@ a:hover {
 .bottom-12 {
     bottom: -12px;
 }
-.top-52{
+
+.top-52 {
     top: -52px;
 }
+
 .top-44 {
     top: -44px;
 }
@@ -192,6 +196,17 @@ a:hover {
 
 .outline-none {
     outline: none;
+}
+
+.sun {
+    width: 106px;
+    height: 106px;
+    background-color: #E7A024;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: -106px;
+    position: relative;
+    top: -48px;
 }
 
 /* header */
@@ -244,15 +259,6 @@ img[alt='logo'] {
 
 }
 
-.ganj::before {
-    content: url('../img/Ellipse\ 6.svg');
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: -44px;
-    z-index: -1;
-}
-
 #banner .swiper-button-prev,
 #banner .swiper-button-next {
     top: 50%;
@@ -278,6 +284,14 @@ img[alt='logo'] {
     font-size: 16px;
 }
 
+.ganjine {
+    background-color: #4E614E;
+    width: 368px;
+    height: 581px;
+    border-radius: 184px 184px 0 0;
+    margin: auto;
+}
+
 /* searchbox */
 .searchbox {
     width: 715px;
@@ -289,7 +303,8 @@ img[alt='logo'] {
     height: 302px;
     border-radius: 70px 70px 0 0;
 }
-.state{
+
+.state {
     background-image: url('../img/Ellipse\ 7.png');
     background-position: center 354px;
     background-size: 1189px;
@@ -309,24 +324,32 @@ footer {
 
 @media only screen and (max-width:1200px) {
     .slide-bg.statistics {
-        width: 92%;
         height: 119px;
         border-radius: 290px 0 0px 290px;
-      }
-      .ganj::before {
+    }
+
+    .ganj::before {
         right: -856px;
         top: 7px;
-      }
-      #statistics img[alt='icon']{
+    }
+
+    #statistics img[alt='icon'] {
         top: 36px;
-        right: -38px!important;
-      }
+        right: -38px !important;
+    }
+    #statistics .sun{
+            margin-bottom: -106px;
+            top: -1px;
+            right: 54px;
+            margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width:992px) {
     .ganj::before {
         right: -631px;
     }
+
     .state {
         background-position: center 1037px;
         background-size: 803px;
@@ -336,40 +359,44 @@ footer {
 @media only screen and (max-width:768px) {
     .ganj::before {
         right: -467px;
-      }
-      #statistics a{
+    }
+
+    #statistics a {
         width: 84px;
         height: 84px;
-      }
-      .state {
+    }
+
+    .state {
         background-size: 526px;
-      }
-      footer p{
+    }
+
+    footer p {
         font-size: 12px;
-      }
+    }
 }
 
 @media only screen and (max-width:576px) {
-    .slide-bg.statistics {
-        width: 74%;
-    }
+
     .ganj::before {
         right: -368px;
-      }
-      .searchbox {
+    }
+
+    .searchbox {
         width: 100%;
-      }
-      .state {
+    }
+
+    .state {
         background-size: 291px;
-      }
-      .right-100 {
+    }
+
+    .right-100 {
         right: -38px;
-      }
-    
+    }
+
 }
 
 @media only screen and (max-width:400px) {
     .ganj::before {
         right: -284px;
-      }
+    }
 }
