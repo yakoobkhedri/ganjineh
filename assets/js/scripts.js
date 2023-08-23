@@ -1,3 +1,14 @@
+// mobile menu
+
+let hamicon=Array.from(document.getElementsByClassName('hamicon'));
+let mobileMenu=document.getElementById('mobile-menu');
+
+hamicon.forEach((item)=>{
+  item.addEventListener('click',function () {
+    mobileMenu.classList.toggle('active');
+  })
+})
+
 // fancybox
 
 Fancybox.bind("[data-fancybox]", {

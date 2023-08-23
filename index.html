@@ -17,12 +17,15 @@
     <!-- header -->
 
     <header class="main-bg position-relative">
+        <!-- wave -->
+        <img alt="wave" src="assets/img/header-wave.PNG"
+            class="position-absolute d-block mx-auto right-6 start-0 rotate-180">
         <div class="container h-100">
             <nav class="row align-items-lg-end align-items-center h-100">
-                <div class="col-5 h-100">
+                <div class="col-lg-5 col-4 h-100">
                     <!-- hamicon -->
                     <img alt="icon" src="assets/img/icons8-menu-16 (1) 1.svg"
-                        class="img-fluid cursor d-block d-lg-none">
+                        class="img-fluid cursor d-block d-lg-none hamicon">
                     <ul class="list-unstyled justify-content-between p-0 m-0 d-none d-lg-flex">
                         <li><a class="d-block third-text">سوژه ها</a></li>
                         <li><a class="d-block third-text">کتاب ها</a></li>
@@ -30,11 +33,12 @@
                         <li><a class="d-block third-text">استان ها</a></li>
                     </ul>
                 </div>
-                <div class="col-2 flex-shrink-0">
+                <!-- logo -->
+                <div class="col-lg-2 col-4 flex-shrink-0">
                     <a class="d-block"><img alt="logo" src="assets/img/logo header.png"
-                            class="img-fluid d-block mx-auto flex-shrink-0"></a>
+                            class="d-block mx-auto flex-shrink-0 position-relative"></a>
                 </div>
-                <div class="col-5 h-100">
+                <div class="col-lg-5 col-4 h-100">
                     <!-- searchicon -->
                     <img alt="icon" src="assets/img/icons8-search 2.svg"
                         class="img-fluid cursor me-auto d-block d-lg-none">
@@ -46,6 +50,28 @@
                     </ul>
                 </div>
             </nav>
+            <!-- mobile menu -->
+            <ul class="list-unstyled p-0 m-0 d-lg-none position-fixed mobile-menu" id="mobile-menu">
+                <div class="d-flex align-items-center justify-content-between px-4 mb-5">
+                    <!-- hamicon -->
+                    <img alt="icon" src="assets/img/icons8-menu-16 (1) 1.svg"
+                        class="img-fluid cursor z-10 position-relative hamicon">
+                    <!-- logo -->
+                    <a class="d-block"><img alt="logo" src="assets/img/logo header.png"
+                            class="d-block mx-auto flex-shrink-0 position-relative"></a>
+                    <!-- searchicon -->
+                    <img alt="icon" src="assets/img/icons8-search 2.svg"
+                        class="img-fluid cursor">
+                </div>
+                <li><a class="d-block third-text px-4 active">صفحه اصلی</a></li>
+                <li><a class="d-block third-text px-4">سوژه ها</a></li>
+                <li><a class="d-block third-text px-4">کتاب ها</a></li>
+                <li><a class="d-block third-text px-4">نویسندگان</a></li>
+                <li><a class="d-block third-text px-4">استان ها</a></li>
+                <li><a class="d-block third-text px-4">ارسال سوژه</a></li>
+                <li><a class="d-block third-text px-4">درباره ما</a></li>
+                <li><a class="d-block third-text px-4">تماس با ما</a></li>
+            </ul>
         </div>
     </header>
 
@@ -71,7 +97,7 @@
                                 کرده و بریا این کار نیز نیازمند نکاه و یاری شما مردم
                                 عزیز هستیم
                             </p>
-                            <a class="btn second-bg w-100 py-3 mt-4">ارسال سوژه</a>
+                            <a class="btn second-bg w-100 py-3 mt-4 special-hover1">ارسال سوژه</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +117,7 @@
                                     کرده و بریا این کار نیز نیازمند نکاه و یاری شما مردم
                                     عزیز هستیم
                                 </p>
-                                <a class="btn second-bg w-100 py-3 mt-4">ارسال سوژه</a>
+                                <a class="btn second-bg w-100 py-3 mt-4 special-hover1">ارسال سوژه</a>
                             </div>
                         </div>
                     </div>
@@ -287,9 +313,9 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next ">
+                    <div class="swiper-button-next">
                     </div>
-                    <div class="swiper-button-prev ">
+                    <div class="swiper-button-prev">
                     </div>
                 </div>
             </div>
@@ -314,7 +340,7 @@
                             <option>همه موضوعات</option>
                             <option>همه موضوعات</option>
                         </select>
-                        <input type="submit" value="بگرد" class="btn second-bg px-4 fw-bold">
+                        <input type="submit" value="بگرد" class="btn second-bg px-4 fw-bold special-hover1">
                     </form>
                     <img alt="icon" src="assets/img/icon.svg" class="img-fluid d-none d-lg-block">
                 </div>
@@ -439,9 +465,11 @@
                                 </div>
                             </div>
                             <a
-                                class="d-flex align-items-center justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
+                                class="d-flex align-items-center special-hover2 justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
                                 <p class="mb-0 h5">مشاهده</p>
-                                <img alt="author" src="assets/img/icons8-arrow-32 2.svg" class="img-fluid">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                  </svg>
                             </a>
                         </div>
                     </div>
@@ -460,9 +488,11 @@
                                 </div>
                             </div>
                             <a
-                                class="d-flex align-items-center justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
+                                class="d-flex align-items-center special-hover2 justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
                                 <p class="mb-0 h5">مشاهده</p>
-                                <img alt="author" src="assets/img/icons8-arrow-32 2.svg" class="img-fluid">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                  </svg>
                             </a>
                         </div>
                     </div>
@@ -481,9 +511,11 @@
                                 </div>
                             </div>
                             <a
-                                class="d-flex align-items-center justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
+                                class="d-flex align-items-center special-hover2 justify-content-center flex-column flex-md-row gap-2 second-text fw-bold rounded-pill border-third py-md-2 px-md-5">
                                 <p class="mb-0 h5">مشاهده</p>
-                                <img alt="author" src="assets/img/icons8-arrow-32 2.svg" class="img-fluid">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                  </svg>
                             </a>
                         </div>
                     </div>
@@ -540,7 +572,7 @@
                             <p class="mb-0 third-text">ایران جوان بمان</p>
                             <img alt="flower" src="assets/img/icons8-flower-67 2.svg" class="img-fluid w-8 h-8 d-block">
                         </div>
-                        <a class="btn text-center mt-5 second-bg text-black w-100 py-2 d-block">مشاهده استان</a>
+                        <a class="btn text-center mt-5 second-bg text-black w-100 py-2 d-block special-hover1">مشاهده استان</a>
                     </div>
                 </div>
             </div>
@@ -550,10 +582,12 @@
 
     <!-- footer -->
 
-    <footer class="d-flex align-items-center">
+    <footer class="d-flex align-items-center position-relative">
         <div class="container mt-5">
             <div class="row align-items-center justify-content-between position-relative">
-                <p class="mb-0 col-6 third-text">تمامی حقوق این سایت برای حوزه هنری محفوظ است</p>
+                <div class="col-md-6 col-8">
+                    <p class="mb-0 third-text">تمامی حقوق این سایت برای حوزه هنری محفوظ است</p>
+                </div>
                 <a
                     class="d-flex col-4 w-44 h-44 mb-5 position-absolute mx-auto end-0 start-0 top-52 align-items-center third-text third-border rounded-circle p-2 justify-content-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -562,7 +596,7 @@
                             d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                     </svg>
                 </a>
-                <div class="d-flex col-6 align-items-center justify-content-end gap-3">
+                <div class="d-flex col-md-6 col-4 align-items-center justify-content-end gap-2 gap-md-3">
                     <p class="mb-0 third-text d-none d-lg-block">شبکه های اجتماعی</p>
                     <a class="d-block">
                         <img alt="social" src="assets/img/icons8-whatsapp-50 1.svg">

@@ -151,23 +151,17 @@ a:hover {
     overflow: hidden;
 }
 
-.special-hover::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 27px;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.24);
-    transform: scale(2) rotate(45deg) translate3d(0, -100%, 0);
-    transition: transform .6s;
-    pointer-events: none;
-    z-index: 1;
+.special-hover1:hover {
+    color: #e7a024 !important;
+    background: #031602 !important;
+    border: 1px solid #e7a024 !important;
+    font-weight: bold !important;
 }
-
-.special-hover:hover::before {
-    transform: scale(2) rotate(45deg) translate3d(0, 100%, 0);
-    left: -51px;
+.special-hover2:hover {
+    color: #031602 !important;
+    background: #e7a024 !important;
+    border: 1px solid #031602 !important;
+    font-weight: bold !important;
 }
 
 .rounded-22 {
@@ -184,6 +178,10 @@ a:hover {
 
 .top-44 {
     top: -44px;
+}
+
+.right-6 {
+    right: 6px;
 }
 
 .right-100 {
@@ -212,13 +210,25 @@ a:hover {
 .custom-blur {
     backdrop-filter: blur(9px);
 }
-.pb-90{
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.pb-90 {
     padding-bottom: 90px;
 }
+
 /* header */
 
 header {
     position: relative;
+}
+
+header img.position-absolute {
+    margin-top: 94px;
+    z-index: -1;
+    width: 183px;
 }
 
 header::before {
@@ -234,12 +244,14 @@ header::before {
     margin-left: auto;
     margin-right: auto;
 }
-header ul li a{
+
+header ul li a {
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
 }
-header ul li a:hover,
-header ul li a.active {
+
+header nav ul li a:hover,
+header nav ul li a.active {
     color: #E7A024;
     border-bottom: 2px solid #E7A024;
 }
@@ -247,7 +259,7 @@ header ul li a.active {
 img[alt='logo'] {
     width: 70px;
     position: relative;
-    bottom: -8px;
+    bottom: -29px;
 }
 
 /* banner */
@@ -284,18 +296,31 @@ img[alt='logo'] {
 
 #banner .swiper-button-prev {
     left: 0;
+    transition: all .4s;
 }
 
 #banner .swiper-button-next {
     right: 0;
+    transition: all .4s;
 }
 
 .swiper-button-prev::after,
-.swiper-button-next::after {
+.swiper-button-next::after,
+.mobile-menu li a.active {
     color: #E7A024;
     font-size: 16px;
+    transition: all .4s;
 }
 
+#banner .swiper-button-prev:hover, #banner .swiper-button-next:hover {
+    color: #031602 !important;
+    background: #e7a024 !important;
+    border: 1px solid #031602 !important;
+}
+#banner .swiper-button-prev:hover:after, #banner .swiper-button-next:hover:after{
+    color: #031602 !important;
+    font-weight: bold;
+}
 .ganjine {
     background-color: #2f432f;
     width: 368px;
@@ -351,13 +376,14 @@ footer {
     #banner .swiper-button-next {
         right: 0;
         top: 92.7%;
+        transition: all .4s;
     }
 
     #banner .swiper-button-prev {
         left: 0;
         top: 92.7%;
+        transition: all .4s;
     }
-
     #banner .swiper-pagination {
         left: 0;
         right: 0;
@@ -397,6 +423,30 @@ footer {
 }
 
 @media only screen and (max-width:992px) {
+
+    .mobile-menu {
+        right: -1050px;
+        top: 0;
+        bottom: 0;
+        background-color: #031602;
+        width: 100%;
+        z-index: 9;
+        line-height: 46px;
+        transition: all .4s;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu li {
+        border-top: 1px solid #414F40;
+    }
+
+    .mobile-menu li:last-child {
+        border-bottom: 1px solid #414F40;
+    }
+
     .ganj::before {
         right: -631px;
     }
@@ -420,10 +470,6 @@ footer {
     .state {
         background-size: 526px;
     }
-
-    footer p {
-        font-size: 12px;
-    }
 }
 
 @media only screen and (max-width:576px) {
@@ -442,6 +488,10 @@ footer {
 
     .right-100 {
         right: -38px;
+    }
+
+    footer p {
+        font-size: 11px;
     }
 
 }
