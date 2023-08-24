@@ -13,7 +13,6 @@ body {
     user-select: none;
     background-color: #031602;
 }
-
 .bg-black {
     background-color: black;
 }
@@ -21,7 +20,9 @@ body {
 .main-bg {
     background-color: #011201;
 }
-
+.main-bg2{
+    background-color: #30412E;
+}
 .main-text {
     color: #011201;
 }
@@ -167,6 +168,9 @@ a:hover {
     color: cadetblue !important;
     font-weight: bold !important;
 }
+.special-rounded{
+    border-radius: 192px 192px 0px 0px;
+}
 .rounded-22 {
     border-radius: 22px;
 }
@@ -246,16 +250,6 @@ header::before {
     z-index: -1;
     margin-left: auto;
     margin-right: auto;
-}
-body::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    right: 0;
-    height: 27px;
-    bottom: -2299px;
-    box-shadow: 0 -97px 237px #E7A024;
 }
 header ul li a {
     border-bottom: 2px solid transparent;
