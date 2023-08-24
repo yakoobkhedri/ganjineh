@@ -163,7 +163,10 @@ a:hover {
     border: 1px solid #031602 !important;
     font-weight: bold !important;
 }
-
+.special-hover3:hover {
+    color: cadetblue !important;
+    font-weight: bold !important;
+}
 .rounded-22 {
     border-radius: 22px;
 }
