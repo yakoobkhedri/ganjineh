@@ -56,6 +56,15 @@ var menuSwiper = new Swiper(".cases", {
     }
   }
 });
+var menuSwiper = new Swiper(".cases2", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 // animation
 
 ScrollReveal().reveal('.top', {
