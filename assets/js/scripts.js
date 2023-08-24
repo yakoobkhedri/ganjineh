@@ -39,11 +39,11 @@ var menuSwiper = new Swiper(".banner", {
     el: ".swiper-pagination",
   },
 });
-var menuSwiper = new Swiper(".brands", {
+var menuSwiper = new Swiper(".cases", {
   loop: true,
   autoplay: true,
   slidesPerView: 4,
-  spaceBetween: 50,
+  spaceBetween: 10,
   breakpoints: {
     1200: {
       slidesPerView: 3
@@ -54,11 +54,7 @@ var menuSwiper = new Swiper(".brands", {
     576: {
       slidesPerView: 1
     }
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  }
 });
 // animation
 
