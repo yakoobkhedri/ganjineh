@@ -247,7 +247,16 @@ header::before {
     margin-left: auto;
     margin-right: auto;
 }
-
+body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0;
+    height: 27px;
+    bottom: -2299px;
+    box-shadow: 0 -97px 237px #E7A024;
+}
 header ul li a {
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
