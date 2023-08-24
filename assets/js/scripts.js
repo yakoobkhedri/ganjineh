@@ -48,10 +48,10 @@ var menuSwiper = new Swiper(".cases", {
     1200: {
       slidesPerView: 3
     },
-    992: {
+    768: {
       slidesPerView: 2
     },
-    576: {
+    400: {
       slidesPerView: 1
     }
   }
