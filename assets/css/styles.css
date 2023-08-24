@@ -51,7 +51,9 @@ body {
 .third-bg {
     background-color: #677367;
 }
-
+.third-bg2 {
+    background-color: #2B3E2B;
+}
 .third-text {
     color: #677367;
 }
@@ -263,7 +265,17 @@ a:hover {
     margin-right: -130px;
     margin-bottom: -139px;
 }
-
+.cases2 .swiper-pagination-bullet-active {
+    opacity: 100%;
+    background: #E7A024;
+  }
+  .cases2 .swiper-pagination-bullet {
+    width: 16px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #636562;
+    margin: 0 5px;
+  }
 .custom-blur {
     backdrop-filter: blur(9px);
 }

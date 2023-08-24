@@ -79,6 +79,7 @@
     <main>
 
         <section>
+            <!-- cases slider -->
             <div class="container py-5">
                 <h1 class="text-center font-bold text-white mt-5">سوژه ها</h1>
                 <!-- swiper -->
@@ -205,8 +206,95 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination w-100 mt-4"></div>
                 </div>
+            </div>
+            <!-- search cases -->
+            <div class="py-4 border-y-main">
+              <div class="container">
+                 <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <form class="bg-white rounded-3 gap-md-2 d-flex align-items-center justify-content-between px-2">
+                            <div class="d-flex flex-grow-1 align-items-center gap-2 px-2 py-3">
+                                <img alt="search" src="assets/img/icons8-search 1.svg">
+                                <input placeholder="جست و جو" class="outline-none flex-grow-1 border-0">
+                            </div>
+                            <input type="submit" value="بگرد" class="btn second-bg px-4 fw-bold special-hover1">
+                        </form>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                       <select class="bg-white rounded-3 py-3 px-4 w-100">
+                        <option>استان</option>
+                        <option>قم</option>
+                        <option>فارس</option>
+                        <option>اصفهان</option>
+                        <option>تهران</option>
+                       </select>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <select class="bg-white rounded-3 py-3 px-4 w-100">
+                            <option>موضوع سوژه</option>
+                            <option>اجتماعی</option>
+                            <option>مذهبی</option>
+                            <option>سیاسی</option>
+                            <option>فرهنگی</option>
+                           </select>
+                    </div>
+                 </div>
+                 <!-- selected items -->
+                 <div class="d-flex align-items-center gap-3 flex-wrap mt-3">
+                    <div class="mb-0 d-flex align-items-center justify-content-center gap-1 rounded-pill second-bg py-2 px-3">
+                      <p class="mb-0">#انقلاب اسلامی</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x cursor" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                    <div class="mb-0 d-flex align-items-center justify-content-center gap-1 rounded-pill second-bg py-2 px-3">
+                      <p class="mb-0">#تهران</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x cursor" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <!-- cases grid -->
+            <div class="container">
+                <div class="row g-4 mt-3">
+                    <div class="col-lg-3">
+                      <div class="p-3 rounded-22 third-bg2">
+                          <div class="position-relative">
+                              <img alt="banner" src="assets/img/3829_orig 2.png" class="img-fluid d-block mx-auto rounded-22">
+                              <img alt="flower" src="assets/img/icons8-flower-67 2.svg" class="position-absolute bottom-12 end-0 me-5">
+                          </div>
+                          <div class="py-3 px-5">
+                              <a class="text-white h3 fw-bold">نادر ابراهیمی</a>
+                              <div class="d-flex align-items-center justify-content-between mt-2">
+                                  <div class="d-flex align-items-center gap-2">
+                                      <img alt="author" src="assets/img/icons8-writer-32 2.svg" class="img-fluid">
+                                      <p class="mb-0 text-white">نویسنده</p>
+                                  </div>
+                                  <p class="mb-0 third-text">#کرمانشاه</p>
+                              </div>
+                          </div>
+                          <div class="border-2 border-top border-secondary px-5">
+                              <div class="d-flex align-items-center justify-content-between mt-2">
+                                  <div class="d-flex align-items-center gap-2">
+                                      <img alt="book" src="assets/img/icons8-book-32(1) 2.svg" class="img-fluid">
+                                      <p class="mb-0 text-white">کتاب ها: 90 مورد</p>
+                                  </div>
+                                  <a class="d-flex align-items-center gap-2 second-text fw-bold special-hover3">
+                                      <p class="mb-0">مشاهده</p>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z">
+                                          </path>
+                                      </svg>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
 

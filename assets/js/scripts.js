@@ -15,9 +15,9 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 // swiper
-var menuSwiper = new Swiper(".banner", {
+var banner = new Swiper(".banner", {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   slidesPerView: 3,
   spaceBetween: 40,
   breakpoints: {
@@ -39,7 +39,7 @@ var menuSwiper = new Swiper(".banner", {
     el: ".swiper-pagination",
   },
 });
-var menuSwiper = new Swiper(".cases", {
+var cases = new Swiper(".cases", {
   loop: true,
   autoplay: true,
   slidesPerView: 4,
@@ -56,7 +56,7 @@ var menuSwiper = new Swiper(".cases", {
     }
   }
 });
-var menuSwiper = new Swiper(".cases2", {
+var cases2 = new Swiper(".cases2", {
   loop: true,
   autoplay: true,
   slidesPerView: 1,
