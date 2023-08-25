@@ -41,7 +41,9 @@ body {
 .second-text {
     color: #E7A024;
 }
-
+.second-border {
+    border: 1px solid #E7A024;
+}
 .text-gold-gradient {
     background: linear-gradient(180deg, #E7A024 28.91%, #7B4F03 128.2%);
     -webkit-background-clip: text;
@@ -107,7 +109,9 @@ body {
 .z-10 {
     z-index: 10;
 }
-
+.z-100 {
+    z-index: 100;
+}
 a {
     cursor: pointer;
     text-decoration: none;
@@ -186,6 +190,12 @@ a:hover {
     height: 195px;
 }
 
+.w-200{
+    width: 200px;
+}
+.h-268{
+    height: 268px;
+}
 .socials a:hover {
     color: #ffca36 !important;
 }
@@ -273,11 +283,12 @@ a:hover {
     background: #E7A024;
   }
   .cases2 .swiper-pagination-bullet {
-    width: 16px;
-    height: 8px;
+    width: 17px;
+    height: 9px;
     border-radius: 8px;
-    border: 1px solid #636562;
+    border: 3px solid #636562;
     margin: 0 5px;
+    overflow: hidden;
   }
 .custom-blur {
     backdrop-filter: blur(9px);
@@ -290,7 +301,29 @@ a:hover {
 .pb-90 {
     padding-bottom: 90px;
 }
+.gray-gradient{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.opacity-none{
+    opacity: 0;
+}
+.bg-flower{
+    background-image: url('../img/hasan-almasi-o_JU7aQCHPQ-unsplash\ \(3\)\ 1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
+}
+.bg-flower::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03170382;
+
+}
 /* header */
 
 header {
@@ -430,6 +463,7 @@ footer {
     height: 132px;
     background-position: center;
     filter: contrast(114%);
+    z-index: 99;
 }
 
 /* responsive */
