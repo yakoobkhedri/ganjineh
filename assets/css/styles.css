@@ -264,7 +264,12 @@ a:hover {
 .h-282 {
     height: 282px;
 }
-
+.w-391{
+    width: 391px;
+}
+.h-505{
+    height: 505px;
+}
 .socials a:hover {
     color: #ffca36 !important;
 }
@@ -422,6 +427,9 @@ a:hover {
     height: 100%;
     background-color: #031703e5;
 }
+.scale-15{
+  transform: scale(1.5);
+}
 
 /* header */
 
@@ -578,6 +586,10 @@ img[alt='logo'] {
 .contact #statistics img[alt="icon"] {
     top: 26px;
     right: -33px !important;
+}
+.third-bg3.book{
+    width: 245px;
+height: 292px;
 }
 
 /* footer */
