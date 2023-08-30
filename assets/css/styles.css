@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "parastoo-Regular";
-    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-FD-WOL.ttf') format("truetype");
+    font-family: "Kalameh-Regular";
+    src: url('../fonts/KalamehWebFaNum-Regular.woff') format("woff");
 }
 
 @font-face {
-    font-family: "parastoo-Bold";
-    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-Bold-FD-WOL.ttf') format("truetype");
+    font-family: "Kalameh-Bold";
+    src: url('../fonts/KalamehWebFaNum-Bold.woff') format("woff");
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kalameh-Regular";
     user-select: none;
     background-color: #031602;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .font-bold {
-    font-family: "parastoo-Bold";
+    font-family: "Kalameh-Bold";
 }
 
 .main-bg {
@@ -264,12 +264,15 @@ a:hover {
 .h-282 {
     height: 282px;
 }
-.w-433{
+
+.w-433 {
     width: 433px;
 }
-.h-505{
+
+.h-505 {
     height: 505px;
 }
+
 .socials a:hover {
     color: #ffca36 !important;
 }
@@ -304,9 +307,11 @@ a:hover {
 .special-rounded2 {
     border-radius: 196px 0 0 196px;
 }
+
 .rounded-15 {
     border-radius: 15px;
 }
+
 .rounded-22 {
     border-radius: 22px;
 }
@@ -334,9 +339,11 @@ a:hover {
 .right-6 {
     right: 6px;
 }
+
 .right-70 {
     right: -70px;
 }
+
 .right-100 {
     right: -100px;
 }
@@ -431,22 +438,73 @@ a:hover {
     height: 100%;
     background-color: #031703e5;
 }
-.scale-15{
-  transform: scale(1.5);
-}
-.radif{
-    flex-direction: row!important;
-}
-.radif .details{
-    margin-left: auto!important;
-}
-.radif .bookNum,.radif .city{
-    display: flex!important;
-}
-.radif .bookNum2{
-    display: none!important;
+
+.scale-15 {
+    transform: scale(1.5);
 }
 
+.radif>div {
+    flex-direction: row !important;
+}
+
+.radif .details {
+    margin-left: auto !important;
+}
+
+.radif .bookNum,
+.radif .city {
+    display: flex !important;
+}
+
+.radif .bookNum2,
+.radif .city2,
+.soton .view,
+.soton .booksLists>div {
+    display: none !important;
+}
+
+.radif .view,
+.radif .booksLists {
+    display: block !important;
+}
+
+.radif .morebooks {
+    margin-top: 20px;
+}
+
+.soton {
+    width: 25%;
+}
+
+.soton .authorName {
+    font-size: 18px;
+}
+
+.soton>div>div {
+    flex-direction: column;
+}
+
+.soton .booksLists {
+    display: flex;
+}
+
+.soton .morebook {
+    width: 100%;
+}
+
+.soton .authorImgs,
+.soton .details {
+    width: 100%;
+}
+.soton .morebook > div:first-child{
+    margin-top: 0!important;
+}
+.soton .gap-3{
+    gap: 0!important;
+}
+.viewType > svg:hover,.viewType > svg.active{
+    color: white!important;
+}
 /* header */
 
 header {
@@ -603,9 +661,10 @@ img[alt='logo'] {
     top: 26px;
     right: -33px !important;
 }
-.third-bg3.book{
+
+.third-bg3.book {
     width: 245px;
-height: 292px;
+    height: 292px;
 }
 
 /* footer */
@@ -698,6 +757,10 @@ footer {
     .top-86 {
         top: 56px;
     }
+
+    .soton {
+        width: 33%;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -734,7 +797,8 @@ footer {
         background-size: 803px;
     }
 
-    .w-284,.w-433 {
+    .w-284,
+    .w-433 {
         width: 100%;
     }
 
@@ -749,20 +813,27 @@ footer {
     .special-rounded2 {
         border-radius: 0 0 0 0;
     }
-    .radif {
-       flex-direction: column!important;
+
+    .radif>div {
+        flex-direction: column !important;
     }
+
     .radif .right-70 {
         left: 177px;
-    right: auto;
-      }
-      .radif .booksList{
+        right: auto;
+    }
+
+    .radif .booksList {
         border-top: 1px solid #414F40;
         padding-top: 18px;
-      }
-      .radif .morebook{
+    }
+
+    .radif .morebook {
         width: 100%;
-      }
+    }
+    .soton{
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -786,10 +857,11 @@ footer {
     .right-183 {
         right: -166px;
     }
+
     .radif .right-70 {
         left: -6px;
         right: auto;
-      }
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -798,7 +870,7 @@ footer {
         right: -368px;
     }
 
-    .searchbox {
+    .searchbox, .soton {
         width: 100%;
     }
 
@@ -821,18 +893,22 @@ footer {
     .top-86 {
         top: 38px;
     }
+
     .radif .right-70 {
         bottom: -16px;
-      }
-      .radif .authorName{
+    }
+
+    .radif .authorName {
         font-size: 14px;
-      }
-      .radif .authorName{
-        width: 150px!important;
-      }
-      .radif img[alt='books']{
+    }
+
+    .radif .authorImg {
+        width: 150px !important;
+    }
+
+    .radif img[alt='books'] {
         width: 60px;
-      }
+    }
 }
 
 @media only screen and (max-width:400px) {

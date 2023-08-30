@@ -9,6 +9,25 @@ hamicon.forEach((item)=>{
   })
 })
 
+// view type
+
+document.getElementById('radif').addEventListener('click',function () {
+  this.classList.add('active');
+  document.getElementById('soton').classList.remove('active');
+  this.parentElement.parentElement.parentElement.nextElementSibling.querySelectorAll('.cols').forEach((item)=>{
+    item.classList.add('radif');
+    item.classList.remove('soton');
+  })
+})
+document.getElementById('soton').addEventListener('click',function () {
+  this.classList.add('active');
+  document.getElementById('radif').classList.remove('active');
+  this.parentElement.parentElement.parentElement.nextElementSibling.querySelectorAll('.cols').forEach((item)=>{
+    item.classList.add('soton');
+    item.classList.remove('radif');
+  })
+})
+
 // fancybox
 
 Fancybox.bind("[data-fancybox]", {
