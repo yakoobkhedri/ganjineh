@@ -334,7 +334,9 @@ a:hover {
 .right-6 {
     right: 6px;
 }
-
+.right-70 {
+    right: -70px;
+}
 .right-100 {
     right: -100px;
 }
@@ -431,6 +433,18 @@ a:hover {
 }
 .scale-15{
   transform: scale(1.5);
+}
+.radif{
+    flex-direction: row!important;
+}
+.radif .details{
+    margin-left: auto!important;
+}
+.radif .bookNum,.radif .city{
+    display: flex!important;
+}
+.radif .bookNum2{
+    display: none!important;
 }
 
 /* header */
@@ -735,6 +749,20 @@ footer {
     .special-rounded2 {
         border-radius: 0 0 0 0;
     }
+    .radif {
+       flex-direction: column!important;
+    }
+    .radif .right-70 {
+        left: 177px;
+    right: auto;
+      }
+      .radif .booksList{
+        border-top: 1px solid #414F40;
+        padding-top: 18px;
+      }
+      .radif .morebook{
+        width: 100%;
+      }
 }
 
 @media only screen and (max-width:768px) {
@@ -758,6 +786,10 @@ footer {
     .right-183 {
         right: -166px;
     }
+    .radif .right-70 {
+        left: -6px;
+        right: auto;
+      }
 }
 
 @media only screen and (max-width:576px) {
@@ -789,6 +821,18 @@ footer {
     .top-86 {
         top: 38px;
     }
+    .radif .right-70 {
+        bottom: -16px;
+      }
+      .radif .authorName{
+        font-size: 14px;
+      }
+      .radif .authorName{
+        width: 150px!important;
+      }
+      .radif img[alt='books']{
+        width: 60px;
+      }
 }
 
 @media only screen and (max-width:400px) {
