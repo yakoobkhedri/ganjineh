@@ -377,6 +377,9 @@ a:hover {
     margin-bottom: -106px;
     position: relative;
     top: -48px;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .case-sun {
@@ -384,6 +387,19 @@ a:hover {
     margin-bottom: -139px;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-6px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-6px);
+    }
+}
 .cases2 .swiper-pagination-bullet-active {
     opacity: 100%;
     background: #E7A024;
@@ -409,7 +425,9 @@ a:hover {
 .pb-90 {
     padding-bottom: 90px;
 }
-
+.pt-90 {
+    padding-top: 90px;
+}
 .mb-7 {
     margin-bottom: -7px;
 }
@@ -421,24 +439,13 @@ a:hover {
 .opacity-none {
     opacity: 0;
 }
-
 .bg-flower {
-    background-image: url('../img/hasan-almasi-o_JU7aQCHPQ-unsplash\ \(3\)\ 1.png');
+    background-image: url('../img/faruk-kaymak-CNVvDjVDiVI-unsplash\ 1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
-
-.bg-flower::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #031703e5;
-}
-
 .scale-15 {
     transform: scale(1.5);
 }

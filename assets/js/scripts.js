@@ -1,30 +1,11 @@
 // mobile menu
 
-let hamicon=Array.from(document.getElementsByClassName('hamicon'));
-let mobileMenu=document.getElementById('mobile-menu');
+let hamicon = Array.from(document.getElementsByClassName('hamicon'));
+let mobileMenu = document.getElementById('mobile-menu');
 
-hamicon.forEach((item)=>{
-  item.addEventListener('click',function () {
+hamicon.forEach((item) => {
+  item.addEventListener('click', function () {
     mobileMenu.classList.toggle('active');
-  })
-})
-
-// view type
-
-document.getElementById('radif').addEventListener('click',function () {
-  this.classList.add('active');
-  document.getElementById('soton').classList.remove('active');
-  this.parentElement.parentElement.parentElement.nextElementSibling.querySelectorAll('.cols').forEach((item)=>{
-    item.classList.add('radif');
-    item.classList.remove('soton');
-  })
-})
-document.getElementById('soton').addEventListener('click',function () {
-  this.classList.add('active');
-  document.getElementById('radif').classList.remove('active');
-  this.parentElement.parentElement.parentElement.nextElementSibling.querySelectorAll('.cols').forEach((item)=>{
-    item.classList.add('soton');
-    item.classList.remove('radif');
   })
 })
 
@@ -94,9 +75,9 @@ ScrollReveal().reveal('.top', {
   easing: 'ease-out'
 });
 
-ScrollReveal().reveal('.left', {
+ScrollReveal().reveal('.bottom', {
   duration: 2000,
-  origin: 'left',
+  origin: 'bottom',
   distance: '100px',
   delay: 500,
   easing: 'ease-out'
