@@ -400,6 +400,7 @@ a:hover {
         transform: translateY(-6px);
     }
 }
+
 .cases2 .swiper-pagination-bullet-active {
     opacity: 100%;
     background: #E7A024;
@@ -425,12 +426,15 @@ a:hover {
 .pb-90 {
     padding-bottom: 90px;
 }
+
 .pt-90 {
     padding-top: 90px;
 }
+
 .pt-100 {
     padding-top: 100px;
 }
+
 .mb-7 {
     margin-bottom: -7px;
 }
@@ -442,6 +446,7 @@ a:hover {
 .opacity-none {
     opacity: 0;
 }
+
 .bg-flower {
     background-image: url('../img/faruk-kaymak-CNVvDjVDiVI-unsplash\ 1.png');
     background-position: center;
@@ -449,6 +454,7 @@ a:hover {
     background-repeat: no-repeat;
     position: relative;
 }
+
 .scale-15 {
     transform: scale(1.5);
 }
@@ -506,32 +512,49 @@ a:hover {
 .soton .details {
     width: 100%;
 }
-.soton .morebook > div:first-child{
-    margin-top: 0!important;
+
+.soton .morebook>div:first-child {
+    margin-top: 0 !important;
 }
-.soton .gap-3{
-    gap: 0!important;
+
+.soton .gap-3 {
+    gap: 0 !important;
 }
-.viewType > svg:hover,.viewType > svg.active{
-    color: white!important;
+
+.viewType>svg:hover,
+.viewType>svg.active {
+    color: white !important;
 }
-.dropdownBtn svg.active{
+
+.dropdownBtn svg.active {
     transform: rotate(180deg);
 }
-.dropdown{
+
+.dropdown {
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
-    margin-top: 0!important;
+    margin-top: 0 !important;
 }
-.dropdown.active{
+
+.dropdown.active {
     max-height: 2000px;
-    margin-top: .5rem!important;;
+    margin-top: .5rem !important;
+    ;
 }
-.iranmap iframe{
-    width: 100%;
-    height: 400px;
+
+.path-city {
+    stroke: #fff;
 }
+
+.path-city:hover {
+    fill: #e7a024;
+}
+
+.path-city-g1,.path-city-g2,.path-city-g3,.path-city-g4 {
+    fill: #c3b7b7;
+}
+
 /* header */
 
 header {
@@ -696,11 +719,12 @@ img[alt='logo'] {
 
 /* footer */
 footer {
-   position: relative;
+    position: relative;
     background-color: #001000;
     padding-bottom: 22px;
     margin-top: 120px;
 }
+
 footer::before {
     content: url('../img/header-wave.png');
     position: absolute;
@@ -711,6 +735,7 @@ footer::before {
     top: -83px;
     z-index: 0;
 }
+
 /* responsive */
 @media only screen and (max-width:1400px) {
     .slide-bg {
@@ -796,6 +821,10 @@ footer::before {
     .soton {
         width: 33%;
     }
+    .state {
+        background-position: center 822px;
+        background-size: 985px;
+      }
 }
 
 @media only screen and (max-width:992px) {
@@ -828,7 +857,7 @@ footer::before {
     }
 
     .state {
-        background-position: center 1037px;
+        background-position: center 875px;
         background-size: 803px;
     }
 
@@ -866,7 +895,8 @@ footer::before {
     .radif .morebook {
         width: 100%;
     }
-    .soton{
+
+    .soton {
         width: 50%;
     }
 }
@@ -897,9 +927,13 @@ footer::before {
         left: -6px;
         right: auto;
     }
+
     #statistics a p {
-      font-size: 14px!important;
+        font-size: 14px !important;
     }
+    .state {
+        background-position: center 1079px;
+      }
 }
 
 @media only screen and (max-width:576px) {
@@ -908,7 +942,8 @@ footer::before {
         right: -368px;
     }
 
-    .searchbox, .soton {
+    .searchbox,
+    .soton {
         width: 100%;
     }
 
