@@ -804,6 +804,7 @@ img[alt='logo'] {
 .ganjine {
     background-color: #2f432f;
     width: 368px;
+    max-width: 100%;
     height: 581px;
     border-radius: 184px 184px 0 0;
     margin: auto;
@@ -812,11 +813,13 @@ img[alt='logo'] {
 /* searchbox */
 .searchbox {
     width: 715px;
+    max-width: 100%;
 }
 
 /* statistics */
 .slide-bg.statistics {
     width: 294px;
+    max-width: 100%;
     height: 302px;
     border-radius: 70px 70px 0 0;
 }
@@ -893,6 +896,7 @@ footer::before {
 @media only screen and (max-width:1200px) {
     .slide-bg {
         width: 368px;
+        max-width: 100%;
     }
 
     .slide-bg.statistics {
@@ -944,7 +948,7 @@ footer::before {
 
     #statistics .sun {
         margin-bottom: -106px;
-        top: -1px;
+        top: 3px;
         right: 54px;
         margin-bottom: 0;
     }
@@ -1083,11 +1087,6 @@ footer::before {
         right: -368px;
     }
 
-    .searchbox,
-    .soton {
-        width: 100%;
-    }
-
     .state {
         background-size: 291px;
     }
@@ -1128,5 +1127,11 @@ footer::before {
 @media only screen and (max-width:400px) {
     .ganj::before {
         right: -284px;
+    }
+    .ml-122{
+        margin-left: 107px;
+    }
+    .w-140{
+        width: 140px;
     }
 }
