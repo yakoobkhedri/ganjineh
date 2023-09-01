@@ -967,7 +967,7 @@ footer::before {
 
     .state {
         background-position: center 822px;
-        background-size: 985px;
+        background-size: 510px;
     }
 }
 
@@ -1077,7 +1077,7 @@ footer::before {
     }
 
     .state {
-        background-position: center 1079px;
+        background-position: center 929px;
     }
 }
 
@@ -1089,6 +1089,7 @@ footer::before {
 
     .state {
         background-size: 291px;
+        background-position: center 987px;
     }
 
     .right-100 {
@@ -1129,9 +1130,13 @@ footer::before {
         right: -284px;
     }
     .ml-122{
-        margin-left: 107px;
+        margin-left: 75px;
     }
     .w-140{
         width: 140px;
+        font-size: 12px;
     }
+    .state {
+        background-position: center 942px;
+      }
 }
