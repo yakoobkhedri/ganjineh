@@ -516,7 +516,7 @@ a:hover {
     transform: rotate(180deg);
 }
 .dropdown{
-    transition: all;
+    transition: all .4s;
     max-height: 0;
     overflow: hidden;
     margin-top: 0!important;
@@ -889,6 +889,9 @@ footer::before {
     .radif .right-70 {
         left: -6px;
         right: auto;
+    }
+    #statistics a p {
+      font-size: 14px!important;
     }
 }
 

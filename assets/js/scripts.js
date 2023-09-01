@@ -8,6 +8,16 @@ hamicon.forEach((item) => {
     mobileMenu.classList.toggle('active');
   })
 })
+// acardion
+
+let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
+
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.querySelector('svg').classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 // fancybox
 
