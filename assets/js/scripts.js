@@ -18,7 +18,20 @@ dropdownBtn.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 })
-
+// iran map
+	//fata or justic departments locations
+	var selpro = $("#selectedprovince")[0];
+	$("body").on("mousemove" , ".selectormap .st0", function(event){
+		selpro.style.left = event.clientX - $("#selectedprovince").width()/2 + "px";
+		selpro.style.top = event.clientY - 45 + "px";
+		selpro.innerHTML = $(this).attr("pname");
+	});
+	$("body").on("mouseover" , ".selectormap g", function(event){
+		$("#selectedprovince").addClass("visible");
+	});
+	$("body").on("mouseleave" , ".selectormap g", function(event){
+		$("#selectedprovince").removeClass("visible");
+	});
 // fancybox
 
 Fancybox.bind("[data-fancybox]", {
