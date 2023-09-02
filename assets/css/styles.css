@@ -182,11 +182,11 @@ a:hover {
 }
 
 .w-65 {
-    width: 65px;
+    width: 50px;
 }
 
 .h-65 {
-    height: 65px;
+    height: 50px;
 }
 
 .w-63 {
@@ -583,7 +583,7 @@ a:hover {
     border-radius: 4px;
     pointer-events: none;
     transform: scaleX(0);
-    transition: transform .5s
+    transition: transform .5s;
 }
 
 #selectedprovince.visible {
@@ -594,7 +594,7 @@ a:hover {
 #selectedprovince:after {
     content: " ";
     position: absolute;
-    top: 28px;
+    top: 32px;
     left: 50%;
     margin-left: -10px;
     border-width: 10px;
@@ -700,12 +700,27 @@ header {
     position: relative;
 }
 
-header img.position-absolute {
-    margin-top: 94px;
-    z-index: 1;
-    width: 183px;
-}
 
+header::after{
+    background-color: #011201;
+  content: "";
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 42px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  z-index: 0;
+  left: 0;
+  margin: auto;
+}
 header::before {
     content: '';
     position: absolute;
@@ -868,14 +883,24 @@ footer {
 }
 
 footer::before {
-    content: url('../img/header-wave.png');
-    position: absolute;
-    width: 338px;
-    left: 0;
+    background-color: #001000;
+    content: "";
+    width: 100px;
+    height: 100px;
     right: 0;
-    margin: auto;
-    top: -83px;
+    top: -47px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
     z-index: 0;
+    left: 0;
+    margin: auto;
 }
 
 /* responsive */
@@ -1123,6 +1148,9 @@ footer::before {
     .radif img[alt='books'] {
         width: 60px;
     }
+    .soton {
+        width: 100%;
+      }
 }
 
 @media only screen and (max-width:400px) {
