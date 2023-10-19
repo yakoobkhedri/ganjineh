@@ -40,7 +40,7 @@ Fancybox.bind("[data-fancybox]", {
 // swiper
 var banner = new Swiper(".banner", {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   slidesPerView: 3,
   spaceBetween: 40,
   breakpoints: {
